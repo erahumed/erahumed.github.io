@@ -1,10 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://erahumed.github.io/erahumed/">
-  <title>Redirecting...</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ERAHUMED Software Hub</title>
+  <meta name="description" content="Access the ERAHUMED R package documentation and User Manual (Quarto book).">
+
+  <meta property="og:title" content="ERAHUMED Software Hub">
+  <meta property="og:description" content="Access the ERAHUMED R package documentation and User Manual (Quarto book).">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0f172a;
+      --muted: #475569;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+      --accent: #0ea5e9;
+      --accent-hover: #0284c7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220;
+        --fg: #e2e8f0;
+        --muted: #94a3b8;
+        --card: #0f172a;
+        --border: #1f2937;
+        --accent: #38bdf8;
+        --accent-hover: #0ea5e9;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+    }
+    .wrap {
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 4rem 1rem;
+    }
+    .card {
+      width: 100%;
+      max-width: 720px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+    h1 {
+      margin: 0 0 .25rem 0;
+      font-size: clamp(1.6rem, 2.5vw + 1rem, 2.4rem);
+      letter-spacing: .2px;
+    }
+    p.lead {
+      margin: 0 0 1.5rem 0;
+      color: var(--muted);
+    }
+    .links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    @media (min-width: 640px) {
+      .links { grid-template-columns: 1fr 1fr; }
+    }
+    .link {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: 1rem 1.1rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff0;
+      text-decoration: none;
+      color: var(--fg);
+      transition: transform .06s ease, border-color .15s ease, background-color .15s ease;
+    }
+    .link:hover {
+      transform: translateY(-1px);
+      border-color: var(--accent);
+      background: rgba(14,165,233,.08);
+    }
+    .link svg {
+      flex: 0 0 22px;
+      opacity: .9;
+    }
+    .title { font-weight: 600; }
+    .url { color: var(--muted); font-size: .925rem; word-break: break-all; }
+  </style>
 </head>
 <body>
-  <p>If you are not redirected automatically, follow this <a href="https://erahumed.github.io/erahumed/">link</a>.</p>
+  <main class="wrap">
+    <section class="card" role="region" aria-labelledby="title">
+      <h1 id="title">ERAHUMED Software Hub</h1>
+      <p class="lead">Access ERAHUMED software resources below.</p>
+
+      <div class="links">
+        <!-- R Package Documentation -->
+        <a class="link" href="https://erahumed.github.io/erahumed/" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path fill="currentColor" d="M6 2h7l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm7 1.5V8h5.5"/>
+          </svg>
+          <div>
+            <div class="title">R Package</div>
+            <div class="url">https://erahumed.github.io/erahumed/</div>
+          </div>
+        </a>
+
+        <!-- Quarto Book -->
+        <a class="link" href="https://erahumed.github.io/erahumed-book/" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path fill="currentColor" d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A1.5 1.5 0 0 0 5 20.5V5.5Zm1 0V20.5A2.5 2.5 0 0 0 8.5 23H21a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H8.5A3.5 3.5 0 0 0 5 4.5Z"/>
+          </svg>
+          <div>
+            <div class="title">User Manual</div>
+            <div class="url">https://erahumed.github.io/erahumed-book/</div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
